@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace MojaPrvaAplikacija.Models
 {
@@ -10,6 +10,8 @@ namespace MojaPrvaAplikacija.Models
         public string password { get; set; }
         [Required]
         public string email { get; set; }
+        public DateTime datumStvaranjaRacuna { get; set; }
+        public bool admin { get; set; }
 
     }
 }
